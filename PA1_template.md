@@ -55,7 +55,7 @@ sumSteps<-aggregate(steps~date,data=data, FUN=sum, na.rm=TRUE)
 qplot(steps,data=sumSteps,binwidth=2000)+xlab("Total number of steps")
 ```
 
-![](PA1_template_files/figure-html/histogram-1.png) 
+![](figure/histogram-1.png) 
 
 
 ```r
