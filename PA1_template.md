@@ -85,7 +85,7 @@ g <- ggplot(avgSteps, aes(x = interval, y =meanOfSteps))
 g + geom_line()+xlab("5-minute interval")+ylab("number of steps taken (average)")
 ```
 
-![](PA1_template_files/figure-html/time series plot1-1.png) 
+![](figure/time series plot1-1.png) 
 
 
 ```r
@@ -144,7 +144,7 @@ sumSteps2<-aggregate(steps~date,data=data2, FUN=sum)
 qplot(steps,data=sumSteps2,binwidth=2000)+xlab("Total number of steps")
 ```
 
-![](PA1_template_files/figure-html/histogram2-1.png) 
+![](figure/histogram2-1.png) 
 
 
 ```r
@@ -212,4 +212,4 @@ g <- ggplot(avgSteps2, aes(x = interval, y =meanOfSteps))
 g + geom_line()+xlab("5-minute interval")+ylab("number of steps taken (average)")+facet_grid(weekdays~.)
 ```
 
-![](PA1_template_files/figure-html/facet graph-1.png) 
+![](figure/facet graph-1.png) 
